@@ -277,38 +277,187 @@ Một Activity Android có các trạng thái:
 
 Trong đó:
 
-`onCreate()` được tự sinh sau khi tạo project vì đây là hàm khởi tạo đầu tiên của ứng dụng.
+`onCreate()` được Android Studio tự động sinh sau khi tạo project vì đây là hàm đầu tiên chạy khi Activity được khởi tạo.
+
+Hàm này có nhiệm vụ:
+
+* Khởi tạo giao diện bằng `setContentView()`
+* Ánh xạ View với `findViewById()`
+* Xử lý logic ban đầu của chương trình.
 
 📷 **Ảnh minh hoạ cần chèn:**
 `[ẢNH 15 - Lifecycle Android]`
 
 ---
 
-## 5. Activity1 - About
+# PROJECT 1 - APP1 (FOOD GUIDE APP)
 
-Hiển thị:
+## 5. Giới thiệu ứng dụng App1
 
-* Thông tin cá nhân
-* Nút mở Activity2
-* Nút mở Activity3
+Ứng dụng App1 được xây dựng bằng Android Studio sử dụng cơ chế **Assets** để lưu dữ liệu chuẩn bị trước dưới dạng JSON.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 16 - Activity1 About]`
+Mục tiêu ứng dụng:
+
+* Hiển thị món ăn vùng miền Việt Nam.
+* Tìm kiếm món ăn theo tên.
+* Lọc món ăn theo tỉnh thành.
+* Hoạt động offline nhờ dữ liệu được lưu sẵn trong Assets.
+
+Dữ liệu được lưu trong file:
+
+```text
+foods.json
+```
 
 ---
 
-## 6. Activity2 - Giải toán + API
+## 6. Thư mục Assets
 
-Chức năng:
+Android Studio hỗ trợ thư mục đặc biệt:
 
-* Giải phương trình bậc 2
-* Gửi dữ liệu lên API:
+```text
+assets
+```
+
+Các file trong thư mục này sẽ được đóng gói đi cùng ứng dụng khi build APK.
+
+Nhờ đó ứng dụng vẫn hoạt động được kể cả khi không có Internet.
+
+Ví dụ:
+
+```java
+InputStream is =
+        getAssets().open("foods.json");
+```
+
+Lệnh trên dùng để đọc file dữ liệu JSON từ thư mục Assets.
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 16 - Thư mục assets và foods.json]`
+
+---
+
+## 7. Giao diện ứng dụng App1
+
+Giao diện gồm:
+
+* Thanh tìm kiếm món ăn.
+* Bộ lọc tỉnh thành.
+* Danh sách món ăn.
+* Khu vực hiển thị thông tin chi tiết.
+
+Các thành phần giao diện được mô tả trong file XML tại:
+
+```text
+res/layout/activity_main.xml
+```
+
+Trong Android Studio, giao diện được xây dựng bằng XML giúp dễ chỉnh sửa và hỗ trợ nhiều thiết bị Android khác nhau.
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 17 - Giao diện FoodGuideApp]`
+
+---
+
+## 8. Xử lý dữ liệu JSON
+
+Ứng dụng đọc dữ liệu JSON từ thư mục Assets và xử lý bằng:
+
+* JSONArray
+* JSONObject
+
+Sau khi đọc dữ liệu, chương trình sẽ:
+
+1. Hiển thị danh sách món ăn.
+2. Lọc món ăn theo tỉnh thành.
+3. Tìm kiếm món ăn theo từ khóa người dùng nhập.
+
+Thuật toán xử lý:
+
+* Duyệt JSON.
+* Lọc theo province.
+* Tìm kiếm theo keyword.
+* Hiển thị bằng ListView.
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 18 - Code đọc JSON từ Assets]`
+
+---
+
+## 9. Kết quả hoạt động App1
+
+Ứng dụng cho phép:
+
+* Tìm món ăn theo tên.
+* Chọn tỉnh thành.
+* Hiển thị thông tin chi tiết món ăn.
+
+Giúp người dùng tra cứu dữ liệu món ăn ngay cả khi offline.
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 19 - Kết quả hoạt động App1]`
+
+---
+
+# PROJECT 2 - APP2 (MIT TƯƠNG ĐƯƠNG)
+
+## 10. Giới thiệu ứng dụng App2
+
+Ứng dụng App2 được xây dựng tương đương với ứng dụng MIT App Inventor gồm 3 Activity:
+
+* Activity1: About
+* Activity2: Giải toán + API
+* Activity3: WebView
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 20 - Tạo project App2MitInventor]`
+
+---
+
+## 11. Activity1 - About
+
+Activity1 dùng để:
+
+* Hiển thị thông tin cá nhân.
+* Điều hướng sang Activity2.
+* Điều hướng sang Activity3.
+
+Sự kiện click Button được xử lý bằng:
+
+```java
+Intent intent =
+        new Intent(
+                MainActivity.this,
+                Activity2.class
+        );
+
+startActivity(intent);
+```
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 21 - Activity1 About]`
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 22 - Code Intent mở Activity]`
+
+---
+
+## 12. Activity2 - Giải toán + API
+
+Activity2 thực hiện:
+
+* Giải phương trình bậc hai.
+* Tính delta.
+* Hiển thị nghiệm.
+* Gửi dữ liệu lên API.
+
+API sử dụng:
 
 ```text
 https://k58kmt.tdh.io.vn/api
 ```
 
-Dữ liệu gửi:
+Dữ liệu gửi đi:
 
 ```json
 {
@@ -327,7 +476,7 @@ Dữ liệu gửi:
 }
 ```
 
-Dữ liệu nhận về:
+Dữ liệu trả về:
 
 ```json
 {
@@ -337,25 +486,37 @@ Dữ liệu nhận về:
 ```
 
 📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 17 - Activity2 giao diện]`
+`[ẢNH 23 - Giao diện Activity2]`
 
 📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 18 - Kết quả API]`
+`[ẢNH 24 - Code gọi API]`
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 25 - Kết quả API]`
 
 ---
 
-## 7. Activity3 - WebView
+## 13. Activity3 - WebView
 
-Website hiển thị:
+Activity3 sử dụng thành phần:
+
+```text
+WebView
+```
+
+để truy cập website:
 
 ```text
 https://k58kmt.tdh.io.vn?masv=K225480106064
 ```
 
-Sử dụng thành phần `WebView`.
+WebView giúp hiển thị website trực tiếp trong ứng dụng mà không cần mở trình duyệt ngoài.
 
 📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 19 - Activity3 WebView]`
+`[ẢNH 26 - Activity3 WebView]`
+
+📷 **Ảnh minh hoạ cần chèn:**
+`[ẢNH 27 - Code WebView]`
 
 ---
 
@@ -369,6 +530,9 @@ Qua bài tập lớn, em đã tìm hiểu được:
 * API JSON
 * AndroidManifest.xml
 * Activity Lifecycle
+* Thư mục Assets
+* Xử lý JSON trong Android
 * Lập trình Java trên Android
 
 Đồng thời giúp nâng cao kỹ năng xây dựng ứng dụng Android thực tế.
+
