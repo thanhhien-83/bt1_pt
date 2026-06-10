@@ -181,7 +181,7 @@ Người dùng nhập dữ liệu và nhấn nút tính để hiển thị kết
 
 ![Ảnh 10](images/10.png)
 
-![Ảnh 11](images/11.png)
+![Ảnh 11](images/11.jpg)
 
 ---
 
@@ -195,7 +195,7 @@ https://k58kmt.tdh.io.vn?masv=K225480106064
 
 Website được tối ưu cho giao diện điện thoại.
 
-![Ảnh 12](images/12.png)
+![Ảnh 12](images/12.jpg)
 
 ---
 
