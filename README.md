@@ -42,8 +42,7 @@ Chứa các thành phần giao diện và chức năng như:
 
 Người dùng có thể kéo thả trực tiếp vào màn hình thiết kế.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 1 - Giao diện MIT App Inventor và Palette]`
+![Ảnh 1](images/1.png)
 
 ---
 
@@ -53,8 +52,7 @@ Là khu vực hiển thị giao diện ứng dụng mô phỏng điện thoại 
 
 Người dùng kéo thả các thành phần từ Palette sang Viewer để xây dựng giao diện.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 2 - Viewer thiết kế ứng dụng]`
+![Ảnh 2](images/2.png)
 
 ---
 
@@ -69,8 +67,7 @@ Hiển thị danh sách các đối tượng đang tồn tại trong ứng dụn
 
 Cho phép đổi tên hoặc quản lý thành phần.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 3 - Components]`
+![Ảnh 3](images/3.png)
 
 ---
 
@@ -88,8 +85,7 @@ Ví dụ:
 
 Mục đích giúp thay đổi giao diện mà không cần lập trình.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 4 - Properties của Button hoặc WebViewer]`
+![Ảnh 4](images/4.png)
 
 ---
 
@@ -111,8 +107,7 @@ Ví dụ:
 * Kéo Label để hiển thị chữ.
 * Kéo WebViewer để hiển thị website.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 5 - Thao tác kéo thả component]`
+![Ảnh 5](images/5.png)
 
 ---
 
@@ -127,11 +122,9 @@ Ví dụ:
 
 Khối lệnh sẽ được ghép nối như các mảnh ghép logic.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 6 - Block xử lý giải toán]`
+![Ảnh 6](images/6.png)
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 7 - Block WebViewer]`
+![Ảnh 7](images/7.png)
 
 ---
 
@@ -161,8 +154,7 @@ Backpack là chức năng giúp:
 
 Giúp tiết kiệm thời gian lập trình.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 8 - Backpack]`
+![Ảnh 8](images/8.png)
 
 ---
 
@@ -177,8 +169,7 @@ Màn hình giới thiệu thông tin sinh viên gồm:
 * Nút mở Screen2
 * Nút mở Screen3
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 9 - Screen1 About]`
+![Ảnh 9](images/9.png)
 
 ---
 
@@ -188,11 +179,9 @@ Màn hình giới thiệu thông tin sinh viên gồm:
 
 Người dùng nhập dữ liệu và nhấn nút tính để hiển thị kết quả.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 10 - Screen2 Giải toán]`
+![Ảnh 10](images/10.png)
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 11 - Block giải toán]`
+![Ảnh 11](images/11.png)
 
 ---
 
@@ -206,8 +195,7 @@ https://k58kmt.tdh.io.vn?masv=K225480106064
 
 Website được tối ưu cho giao diện điện thoại.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 12 - Screen3 WebViewer]`
+![Ảnh 12](images/12.png)
 
 ---
 
@@ -233,8 +221,7 @@ Template sử dụng:
 Empty Views Activity
 ```
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 13 - Tạo project Android Studio]`
+![Ảnh 13](images/13.png)
 
 ---
 
@@ -259,8 +246,7 @@ Mục đích:
 
 Cho phép ứng dụng kết nối API và WebView.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 14 - AndroidManifest.xml]`
+![Ảnh 14](images/14.png)
 
 ---
 
@@ -285,8 +271,7 @@ Hàm này có nhiệm vụ:
 * Ánh xạ View với `findViewById()`
 * Xử lý logic ban đầu của chương trình.
 
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 15 - Lifecycle Android]`
+![Ảnh 15](images/15.png)
 
 ---
 
@@ -309,216 +294,45 @@ Dữ liệu được lưu trong file:
 foods.json
 ```
 
----
-
-## 6. Thư mục Assets
-
-Android Studio hỗ trợ thư mục đặc biệt:
-
-```text
-assets
-```
-
-Các file trong thư mục này sẽ được đóng gói đi cùng ứng dụng khi build APK.
-
-Nhờ đó ứng dụng vẫn hoạt động được kể cả khi không có Internet.
-
-Ví dụ:
-
-```java
-InputStream is =
-        getAssets().open("foods.json");
-```
-
-Lệnh trên dùng để đọc file dữ liệu JSON từ thư mục Assets.
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 16 - Thư mục assets và foods.json]`
-
----
+![Ảnh 16](images/16.png)
 
 ## 7. Giao diện ứng dụng App1
 
-Giao diện gồm:
-
-* Thanh tìm kiếm món ăn.
-* Bộ lọc tỉnh thành.
-* Danh sách món ăn.
-* Khu vực hiển thị thông tin chi tiết.
-
-Các thành phần giao diện được mô tả trong file XML tại:
-
-```text
-res/layout/activity_main.xml
-```
-
-Trong Android Studio, giao diện được xây dựng bằng XML giúp dễ chỉnh sửa và hỗ trợ nhiều thiết bị Android khác nhau.
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 17 - Giao diện FoodGuideApp]`
-
----
+![Ảnh 17](images/17.png)
 
 ## 8. Xử lý dữ liệu JSON
 
-Ứng dụng đọc dữ liệu JSON từ thư mục Assets và xử lý bằng:
-
-* JSONArray
-* JSONObject
-
-Sau khi đọc dữ liệu, chương trình sẽ:
-
-1. Hiển thị danh sách món ăn.
-2. Lọc món ăn theo tỉnh thành.
-3. Tìm kiếm món ăn theo từ khóa người dùng nhập.
-
-Thuật toán xử lý:
-
-* Duyệt JSON.
-* Lọc theo province.
-* Tìm kiếm theo keyword.
-* Hiển thị bằng ListView.
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 18 - Code đọc JSON từ Assets]`
-
----
+![Ảnh 18](images/18.png)
 
 ## 9. Kết quả hoạt động App1
 
-Ứng dụng cho phép:
-
-* Tìm món ăn theo tên.
-* Chọn tỉnh thành.
-* Hiển thị thông tin chi tiết món ăn.
-
-Giúp người dùng tra cứu dữ liệu món ăn ngay cả khi offline.
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 19 - Kết quả hoạt động App1]`
-
----
+![Ảnh 19](images/19.png)
 
 # PROJECT 2 - APP2 (MIT TƯƠNG ĐƯƠNG)
 
 ## 10. Giới thiệu ứng dụng App2
 
-Ứng dụng App2 được xây dựng tương đương với ứng dụng MIT App Inventor gồm 3 Activity:
-
-* Activity1: About
-* Activity2: Giải toán + API
-* Activity3: WebView
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 20 - Tạo project App2MitInventor]`
-
----
+![Ảnh 20](images/20.png)
 
 ## 11. Activity1 - About
 
-Activity1 dùng để:
+![Ảnh 21](images/21.png)
 
-* Hiển thị thông tin cá nhân.
-* Điều hướng sang Activity2.
-* Điều hướng sang Activity3.
-
-Sự kiện click Button được xử lý bằng:
-
-```java
-Intent intent =
-        new Intent(
-                MainActivity.this,
-                Activity2.class
-        );
-
-startActivity(intent);
-```
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 21 - Activity1 About]`
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 22 - Code Intent mở Activity]`
-
----
+![Ảnh 22](images/22.png)
 
 ## 12. Activity2 - Giải toán + API
 
-Activity2 thực hiện:
+![Ảnh 23](images/23.png)
 
-* Giải phương trình bậc hai.
-* Tính delta.
-* Hiển thị nghiệm.
-* Gửi dữ liệu lên API.
+![Ảnh 24](images/24.png)
 
-API sử dụng:
-
-```text
-https://k58kmt.tdh.io.vn/api
-```
-
-Dữ liệu gửi đi:
-
-```json
-{
- "app_by":"K225480106064",
- "input":{
-   "a":1,
-   "b":2,
-   "c":3,
-   "name":"hello tắc kè"
- },
- "output":{
-   "ketluan":"vô nghiệm",
-   "abc":"xyz",
-   "nghiem":3.14
- }
-}
-```
-
-Dữ liệu trả về:
-
-```json
-{
- "ok":1,
- "stt":1234
-}
-```
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 23 - Giao diện Activity2]`
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 24 - Code gọi API]`
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 25 - Kết quả API]`
-
----
+![Ảnh 25](images/25.png)
 
 ## 13. Activity3 - WebView
 
-Activity3 sử dụng thành phần:
+![Ảnh 26](images/26.png)
 
-```text
-WebView
-```
-
-để truy cập website:
-
-```text
-https://k58kmt.tdh.io.vn?masv=K225480106064
-```
-
-WebView giúp hiển thị website trực tiếp trong ứng dụng mà không cần mở trình duyệt ngoài.
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 26 - Activity3 WebView]`
-
-📷 **Ảnh minh hoạ cần chèn:**
-`[ẢNH 27 - Code WebView]`
-
----
+![Ảnh 27](images/27.png)
 
 # KẾT LUẬN
 
@@ -535,4 +349,3 @@ Qua bài tập lớn, em đã tìm hiểu được:
 * Lập trình Java trên Android
 
 Đồng thời giúp nâng cao kỹ năng xây dựng ứng dụng Android thực tế.
-
