@@ -2,9 +2,9 @@
 
 ## Thông tin sinh viên
 
-* **Họ và tên:** [Điền họ tên]
-* **Mã sinh viên:** K225480106064
-* **Lớp:** [Điền lớp]
+* **Họ và tên:** Hứa Thị Thanh Hiền
+* **Mã sinh viên:** K225480106016
+* **Lớp:** K58KTP
 * **Môn học:** Phát triển ứng dụng trên thiết bị di động - TEE0419
 
 ---
